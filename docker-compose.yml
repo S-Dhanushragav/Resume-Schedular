@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    build: ./job-tracker-backend
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./job-tracker-frontend
+    ports:
+      - "3000:3000"
