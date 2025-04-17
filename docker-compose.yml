@@ -1,11 +1,23 @@
-version: '3'
+
 services:
   backend:
-    build: ./job-tracker-backend
+    build:
+      context: ./job-tracker-backend
+    container_name: job-tracker-backend
     ports:
       - "8000:8000"
+    volumes:
+      - ./job-tracker-backend:/app
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 #--reload  # Update here
 
   frontend:
-    build: ./job-tracker-frontend
+    build:
+      context: ./job-tracker-frontend
+    container_name: job-tracker-frontend
     ports:
-      - "3000:3000"
+      - "3000:80"
+    # volumes:
+    #   - ./job-tracker-frontend:/app
+    #   - /app/node_modules
+    stdin_open: true
+    tty: true
