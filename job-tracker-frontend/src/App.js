@@ -55,7 +55,7 @@ function App() {
         <form onSubmit={handleSubmit} className="form">
           {/* Resume Upload */}
           <div className="input-group">
-            <label>Upload Resume (PDF):</label>
+            <label>upload your resumes (PDF):</label>
             <input type="file" accept=".pdf" onChange={handleResumeChange} required />
           </div>
 
