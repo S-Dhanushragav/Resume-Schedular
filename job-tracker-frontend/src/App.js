@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>AI-Powered Resume Matcher</h1>
+        <h1>AI Resume Matcher</h1>
         <p>Match your resume against top job roles and get insights!</p>
       </header>
 
@@ -55,7 +55,7 @@ function App() {
         <form onSubmit={handleSubmit} className="form">
           {/* Resume Upload */}
           <div className="input-group">
-            <label>Upload Resume (PDF):</label>
+            <label>upload your resumes (PDF):</label>
             <input type="file" accept=".pdf" onChange={handleResumeChange} required />
           </div>
 
