@@ -29,7 +29,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/process_resume/",
+        "http://localhost:8010/process_resume/",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
