@@ -1,4 +1,4 @@
-# 🧠 AI-Powered Resume schedular | FastAPI + ReactJS + NLP + Docker + Jenkins
+# 🧠 AI-Powered Resume scheduler | FastAPI + ReactJS + NLP + Docker + Jenkins
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-API-green)](https://fastapi.tiangolo.com/)
